@@ -10,8 +10,17 @@ const Home = () => {
     .then(data => setLeagues(data.leagues))
   },[])
   return (
-    <div className="leagues-container">
-      {leagues.map(league => <SingleLeague league ={league}></SingleLeague>)}
+    <div>
+      <div className="home-bg">
+
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="leagues-container">
+            {leagues.map(league => <SingleLeague league ={league}></SingleLeague>)}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
