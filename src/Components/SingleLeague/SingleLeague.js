@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './SingleLeague.css'
@@ -7,11 +7,13 @@ import './SingleLeague.css'
 const SingleLeague = (props) => {
   const {idLeague,strLeague, strSport} = props.league;
   const [badge, setBadge] = useState('');
+  // get id from history parameter
   let history = useHistory();
   const showDetails = id => {
     let url = `league/${id}`;
     history.push(url)
   };
+  // fetch data based on id
   fetch(`https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${idLeague}`)
   .then(res => res.json())
   .then(data =>  setBadge(data.leagues[0].strBadge))

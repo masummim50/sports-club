@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFlag, faFutbol, faLandmark, faMars, faVenus } from '@fortawesome/free-solid-svg-icons';
 import facebook from '../../images/facebook.jpg';
 import twitter from '../../images/twitter.png';
-import youtube from '../../images/youtube.png'
+import youtube from '../../images/youtube.png';
 
 const Details = () => {
   const {idLeague} = useParams();
@@ -51,10 +51,11 @@ const Details = () => {
           </div>
         </div>
         <div className="row">
+          <h4>About {strLeague}:</h4>
           <p>{strDescriptionEN}</p>
         </div>
         <div className="social-icons text-center mb-5 mt-5">
-          <a href={`//${strFacebook}`} target='_blank'><img src={facebook} alt=""/></a>
+        <a href={`//${strFacebook}`} target='_blank'><img src={facebook} alt=""/></a>
           <a href={`//${strTwitter}`} target='_blank'><img src={twitter} alt=""/></a>
           <a href={`//${strYoutube}`} target='_blank'><img src={youtube} alt=""/></a>
         </div>
