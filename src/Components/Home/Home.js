@@ -11,8 +11,9 @@ const Home = () => {
   },[])
   return (
     <div>
-      <div className="home-bg text-white d-flex align-items-center justify-content-center">
-        <h1>Team Tracker</h1>
+      <div className="home-bg text-white d-flex flex-column align-items-center justify-content-center">
+        <h1>Choose your Team</h1>
+        <p>Browse through hundreds of club to find your perfect team</p>
       </div>
       <div className="container">
         <div className="row">

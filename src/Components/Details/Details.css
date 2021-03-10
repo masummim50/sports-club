@@ -1,3 +1,7 @@
+
+.details-container{
+  background-color: rgb(42, 42, 49);
+}
 .details-top-bg{
   background-image: url('../../images/field.jpg');
   height:200px;
@@ -8,7 +12,7 @@
 }
 .details-top-bg::after{
   position: absolute;
-  background-color:rgba(0, 0, 0,0.7);
+  background-color:rgba(255, 255, 255, 0.8);
   height:100%;
   width: 100%;
   content: '';
@@ -19,4 +23,14 @@
 }
 .details-top-bg img{
   z-index: 99;
+}
+.league-info svg{
+  margin-right:8px;
+  width:20px;
+}
+.social-icons img{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  margin:0 10px;
 }
