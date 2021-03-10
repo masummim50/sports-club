@@ -54,9 +54,9 @@ const Details = () => {
           <p>{strDescriptionEN}</p>
         </div>
         <div className="social-icons text-center mb-5 mt-5">
-          <a target="_blank" href={strFacebook}><img src={facebook} alt=""/></a>
-          <a target="_blank" href={strTwitter}><img src={twitter} alt=""/></a>
-          <a target="_blank" href={strYoutube}><img src={youtube} alt=""/></a>
+          <a href={`//${strFacebook}`} target='_blank'><img src={facebook} alt=""/></a>
+          <a href={`//${strTwitter}`} target='_blank'><img src={twitter} alt=""/></a>
+          <a href={`//${strYoutube}`} target='_blank'><img src={youtube} alt=""/></a>
         </div>
       </div>
     </div>
