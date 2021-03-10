@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import male from '../../images/male.png';
-import female from '../../images/female.png'
+import female from '../../images/female.png';
+import './Details.css'
 const Details = () => {
   const {idLeague} = useParams();
   const [singleLeague, setSingleLeague] = useState([])
@@ -16,10 +17,10 @@ const Details = () => {
   console.log(strGender)
   return (
     <div>
-      <div className="top-bg text-center">
-        <h3>{strLeague}</h3>
+      <div className="details-top-bg text-center">
+        <img className="position-relative h-100 p-3" src={strBadge} alt=""/>
       </div>
-      <div className="container">
+      <div className="container text-white">
         <div className="row bg-primary p-3 d-flex align-items-center">
           <div className="col-md-6">
             <h2>{strLeague}</h2>

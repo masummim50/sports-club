@@ -11,8 +11,8 @@ const Home = () => {
   },[])
   return (
     <div>
-      <div className="home-bg">
-
+      <div className="home-bg text-white d-flex align-items-center justify-content-center">
+        <h1>Team Tracker</h1>
       </div>
       <div className="container">
         <div className="row">

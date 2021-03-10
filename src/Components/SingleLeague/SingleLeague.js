@@ -13,10 +13,10 @@ const SingleLeague = (props) => {
   .then(res => res.json())
   .then(data =>  setBadge(data.leagues[0].strBadge))
   return (
-    <div className="d-flex flex-column align-items-center justify-content-center border-rounded bg-secondary p-5">
+    <div className="d-flex flex-column align-items-center justify-content-center border-rounded bg-secondary p-3">
       <img className="w-50" src={badge} alt=""/>
-      <h5>{strLeague}</h5>
-      <h6>{strSport}</h6>
+      <h6>{strLeague}</h6>
+      <p>{strSport}</p>
       <button className="px-5 py-2" onClick={()=> {showDetails(idLeague)}}>Details</button>
     </div>
   );
